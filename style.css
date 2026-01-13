@@ -24,6 +24,12 @@
     border: solid 1px red;
 }
 
+.round:active {
+    background-color: blue;
+    border-radius: 50%;
+    border: solid 1px black;
+}
+
 
 
 .round2 {
