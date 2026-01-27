@@ -2,41 +2,28 @@
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25) 1px, transparent 1px), 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25) 1px, transparent 1px),
         linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px);
     background-size: 25px 25px;
 }
-
+ 
 .roundObject {
     border: solid 1px black;
-    
+ 
 }
-
+ 
 .roundObject:hover {
-     border: solid 1px red;
+    border: solid 1px red;
 }
+ 
 .round{
-    border-radius: 50%;
-    border: solid 1px black;
+border-radius: 50%;
+border: solid 1px black;
+ 
 }
-
-.round:hover {
-    border: solid 1px red;
-}
-
+ 
 .round:active {
-    background-color: blue;
-    border-radius: 50%;
-    border: solid 1px black;
-}
-
-
-
-.round2 {
-    border-radius: 50%;
-    border: solid 1px black;
-}
-
-.round2:hover {
-    border: solid 1px red;
+border-radius: 50%;
+border: solid 1px black;
+background-color: blue;
 }
