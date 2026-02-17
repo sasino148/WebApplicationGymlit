@@ -1,5 +1,5 @@
 export class Object {
-    constructor(camera, x, y, width = 100, height = 100, parent = null) {
+   /* constructor(camera, x, y, width = 100, height = 100, parent = null) {
         this.camera = camera;
         this.world = camera.world;
  
@@ -84,6 +84,6 @@ export class Object {
  
     onCameraMove() {
         this.updateScreenPosition();
-    }
+    }*/
 }
  

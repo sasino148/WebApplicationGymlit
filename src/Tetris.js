@@ -1,5 +1,5 @@
 export class Tetris {
-    constructor(parent, x = 400, y = 20, cellSize = 24, cols = 10, rows = 20) {
+    /*constructor(parent, x = 400, y = 20, cellSize = 24, cols = 10, rows = 20) {
         this.parent = parent;
         this.x = x;
         this.y = y;
@@ -233,5 +233,5 @@ export class Tetris {
         this.spawn();
         this.start();
         this.render();
-    }
+    }*/
 }

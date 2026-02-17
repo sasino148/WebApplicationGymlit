@@ -1,5 +1,5 @@
 export class SlotMachine {
-    constructor(parent, x = 0, y = 0) {
+    /*constructor(parent, x = 0, y = 0) {
         this.parent = parent;
         this.x = x;
         this.y = y;
@@ -172,5 +172,5 @@ export class SlotMachine {
             // auto remove
             setTimeout(() => c.remove(), 1800 + delay);
         }
-    }
+    }*/
 }

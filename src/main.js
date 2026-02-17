@@ -2,6 +2,7 @@ import { Camera } from "./Camera";
 import { Object } from "./Object";
 import { SlotMachine } from "./SlotMachine"; 
 import { Tetris } from "./Tetris";   
+import {control} from "./control";
  
 const hiButton = document.getElementById("hiButton");
 const scene = document.getElementById("scene");
@@ -11,6 +12,8 @@ const camera = new Camera(scene, world, 0, 0);
  
 const slot = new SlotMachine(world, 20, 20);
 const tetris = new Tetris(world, 1000, 20);
+
+const xcontrol = new control("souřadnice x")
 
 let counter = 0;
  
