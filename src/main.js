@@ -1,8 +1,11 @@
 import { Camera } from "./Camera";
-import { Object } from "./Object";
-import { SlotMachine } from "./SlotMachine"; 
-import { Tetris } from "./Tetris";   
-import {control} from "./control";
+//import {Novy} from "./Novy";
+//import { Object } from "./Object";
+import {Control} from "./control";
+//import { SlotMachine } from "./SlotMachine"; 
+//import { Tetris } from "./Tetris";   
+import { Ball } from "./ball";
+
  
 const hiButton = document.getElementById("hiButton");
 const scene = document.getElementById("scene");
@@ -10,16 +13,25 @@ const world = document.getElementById("world");
  
 const camera = new Camera(scene, world, 0, 0);
  
-const slot = new SlotMachine(world, 20, 20);
-const tetris = new Tetris(world, 1000, 20);
+//const slot = new SlotMachine(world, 20, 20);
+//const tetris = new Tetris(world, 1000, 20);
 
-const xcontrol = new control("souřadnice x")
+const ball = new Ball(world, 50, 50, "red", 100, 100);
+
+const xControl = new Control("souřadnice x");
+xControl.buttonElement.onclick = () => {
+    bod.style.left = `${xControl.inputElement.value}px`;
+}
+const yControl = new Control("souřadnice y");
+yControl.buttonElement.onclick = () => {
+    bod.style.top = `${yControl.inputElement.value}px`;
+}
 
 let counter = 0;
  
 hiButton.innerHTML = `${counter}`;
  
-const testDiv = new Object(camera, 300, 300, 200, 200);
+/*const testDiv = new Object(camera, 300, 300, 200, 200);
  
 testDiv.element.classList.add("roundObject");
 testDiv.element.style.position = "absolute";
@@ -77,4 +89,4 @@ novyObjekt.addEventListener("click", (e) => {
     const ob = new Novy(world, 10, 10, 100, 100);
     ob.element.classList.add("objekt");
     object_list.push(ob);
-});
+});*/
